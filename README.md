@@ -1,20 +1,19 @@
-# UpdatedMedicine
+**DEVEXTREME REACT GRID WITH CRUD OPERATION**
 
-To start your Phoenix server:
+This project is constructed using **ReactJS** for frontend, **Phoenix framework** for backend and **PostgreSQL** for database.
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Install Node.js dependencies with `npm install` inside the `assets` directory
-  * Start Phoenix endpoint with `mix phx.server`
+1)Open assets --> js --> src --> components --> MedicineCard.js and Test.js. 
+MedicineCard.js Contains the devextreme react editable grid code with axios API calls for CRUD operation.
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+2)Remount.js is used to connect react with phoenix framework. Remount can mount any react component in your HTML as a custom element
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+3)Now go back and open lib --> updatedMedicine_web --> controllers -->medicine_controller.ex.
+Here you can find the controller file where it handles the data from database to the application withe create,show,update and delete functions
 
-## Learn more
+4)Go back to lib folder --> router.ex. 
+Here you can see the routes for api calls
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+5)Go back to lib folder --> templates --> page -->index.html.eex. 
+Here you can find the react element which is defined in remount (assets/js/src/app.js). This will help to show the grid.
+
+
