@@ -1,0 +1,8 @@
+defmodule UpdatedMedicineWeb.PageControllerTest do
+  use UpdatedMedicineWeb.ConnCase
+
+  test "GET /", %{conn: conn} do
+    conn = get(conn, "/")
+    assert html_response(conn, 200) =~ "Welcome to Phoenix!"
+  end
+end

@@ -1,0 +1,9 @@
+<section class="phx-hero">
+ <h1>Medicine List</h1>
+</section>
+
+<section class="row">
+  <article class="column">
+    <x-medicine></x-medicine>
+  </article>
+</section>
